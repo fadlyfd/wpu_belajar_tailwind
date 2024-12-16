@@ -1,33 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["index.html"],
   darkMode: "class",
   theme: {
+    container: {
+      center: true,
+      padding: "16px",
+    },
     extend: {
       colors: {
-        clifford: "#da373d",
+        primary: "#14b8a6",
+        secondary: "#64748b",
+        dark: "#0f172a",
       },
-      spacing: {
-        13: "3.25rem",
-        15: "3.75rem",
-      },
-      fontFamily: {
-        inter: ["Inter"],
-        mon: ["Montserrat"],
-      },
-      colors: {
-        wpu: "#bada55",
-        gpu: "#0ff",
-      },
-      animation: {
-        "spin-slow": "spin 3s linear infinite",
-        goyang: "goyang 1s ease-in-out infinite",
-      },
-      keyframes: {
-        goyang: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
-        },
+      screens: {
+        "2xl": "1320px",
       },
     },
   },
